@@ -1,0 +1,452 @@
+/*
+By: Ian Reineck
+Email: ianreineck@gmail.com
+for use by U.C.P. of Western Wisconsin
+last update: Sep 9 2015
+
+background image is an open source image and can be found here http://4.bp.blogspot.com/-WW1F7siHC5k/T7NFgeIZN6I/AAAAAAAAC10/G2IiZ322WJ0/s1600/metal-and-carbon-fiber-pattern-background-texture_04.jpg
+*/
+
+header, hgroup, nav, footer, figure, figcaption, aside, section, article { 
+   display: block; 
+}
+
+body{
+   position: relative;
+   background-image: url("../img/metal.jpg");
+   width: 100%;
+}
+
+header {
+   position: relative;
+   background-color: black;
+   top: -10px;
+   left: -15px;
+   height: 150px;
+   width: 100%;
+}
+
+#ucpLogo {
+   opacity: .65;
+   position: absolute;
+   height: 100%;
+   width: 19%;
+}
+
+#logo{
+   opacity: .7;
+   position: relative;
+   top: 10px;
+   left: 78.3%;
+   height: 100%;
+   width:  20%;
+}
+
+header h1{
+   opacity: .85;
+   position: absolute;
+   font-family: monospace;
+   font-size: 210%;
+   text-shadow: 5px 5px 6px blue,
+      -6px -6px 45px green;
+   left: 25%;
+   top: 30%;
+   color: white;
+   text-align: center;
+}
+
+#wrapper{
+   position: relative;
+   top: -20px;
+   left: 130px;
+   height: 800px;
+   width: 1000px;
+}
+
+#wrapper h2{
+   color: orange;
+   text-align: center;
+}
+
+.sideTabs{
+   opacity: .75;
+   background-color: darkorange;
+   font-family: cursive;
+   color: black;
+   position: relative;
+   left: -140px;
+   top: 10px;
+   border: 1px solid white;
+   height: 48px;
+   width: 150px;
+}
+
+.sideTabs h3{
+   position: relative;
+   left: 35px;
+}
+
+.slideInDivs {
+   color: black;
+   font-family: monospace;
+   z-index: 0;
+   position: absolute;
+   visibility: hidden;
+   top: 30px;
+   left: 100px;
+   border: 1px solid white;
+   border-radius: 0px 15px 15px 0px;
+   box-shadow: 2px 2px 2px darkorange,
+      3px 3px 10px white,
+      4px 4px 10px  darkorange,
+      -2px -2px 2px darkorange,
+      -3px -3px 10px white,
+      -4px -4px 10px  darkorange;
+   height: 755px;
+   width: 900px;
+}
+
+.slideInDivs p {
+   padding-left: 50px;
+   padding-right: 50px;
+}
+
+#defaultContent {
+   z-index: initial;
+   position: relative;
+   visibility: visible;
+   opacity: .5;
+   top: -125px;
+   left: 100px;
+   border: 1px solid white;
+   border-radius: 0px 15px 15px 0px;
+   box-shadow: 2px 2px 2px darkorange,
+      3px 3px 10px white,
+      4px 4px 10px  darkorange,
+      -2px -2px 2px darkorange,
+      -3px -3px 10px white,
+      -4px -4px 10px  darkorange;
+   height: 700px;
+   width: 900px;
+   background-color: black;
+   
+}
+
+#defaultContent img {
+   position: absolute;
+   height: 85%;
+   top: 5%;
+   left: 15%;
+}
+
+.rider {
+   font-family: cursive;
+   text-decoration: underline;
+   
+}
+
+.ridersBios {
+   opacity: .98;
+   color:whitesmoke;
+   background: black;
+   font-family: monospace;
+   z-index: 0;
+   position: absolute;
+   visibility: hidden;
+   top: 30px;
+   left: 100px;
+   border: 1px solid white;
+   border-radius: 0px 15px 15px 0px;
+   box-shadow: 2px 2px 2px darkorange,
+      3px 3px 10px white,
+      4px 4px 10px  darkorange,
+      -2px -2px 2px darkorange,
+      -3px -3px 10px white,
+      -4px -4px 10px  darkorange;
+   height: 700px;
+   width: 600px;
+}
+
+.ridersBios img {
+   height: 25%;
+   padding-left: 5px;
+   margin-top: 10px;
+}
+
+.ridersBios p {
+   width: 65%;
+}
+
+.ridersBios a {
+   color: whitesmoke;
+   font-family: cursive;
+}
+
+.bioText {
+   position: absolute;
+   left: 250px;
+   
+}
+
+.exitButton {
+   font-size: 20px;
+}
+
+.slideInDivs a {
+   color: black;
+   font-size: 85%;
+   text-decoration: underline;
+   font-family: cursive;
+}
+
+a:hover {
+   color: darkorange;
+}
+
+footer {
+    background-color: black;
+    color: darkorange;
+    width: 100%;
+ }
+
+#socialMediaNav { 
+   color: white;
+   font-family: monospace;
+   font-size: 40px;
+   position: absolute;
+   left: 50%;
+   top: 90%;
+}
+
+#socialMediaNav a {
+   font-size: 45px;
+   color: blue;
+}
+
+#followText {
+   font-size: 15px;
+   font-family: monospace;
+   margin-left: -45%;
+}
+
+/*RESPONSIVE*/
+#mobile  { 
+   display: none;
+}
+
+#desktop { 
+   display: inline;
+}
+
+img {
+   max-width: 100%;
+   height: auto;
+}
+
+@media only screen and (max-width: 1100px){
+   header h1 {
+      font-size: 175%;
+   }
+}
+
+@media only screen and (max-width: 900px){
+   header h1{
+      font-size: 150%;
+   }
+}
+
+@media only screen and (max-width: 768px) {
+   
+   body{ 
+      margin: 0;
+      max-width:  width: 768px;
+      height: 200px;
+   }
+
+   #ucpLogo {
+      left: 0%;
+      height: 100%;
+   }
+   
+   header  {
+      font-size: 60%;
+      height: 105px;
+      width: 100%;
+   }
+   
+   header h1{
+      top: 30%;
+      font-size: 200%;
+   }
+   
+   #wrapper{
+      position: relative;
+      top: -20px;
+      left: 130px;
+      height: 800px;
+      width: 600px;
+   }
+   
+   #defaultContent {
+      top: -85px;
+      left: 75px;
+      height: 500px;
+      width: 500px;
+   }
+   
+   .slideInDivs {
+      top: 30px;
+      left: 25px;
+      height: 800px;
+      width: 550px;
+   }
+   
+   .slideInDivs img {
+      height: 60%;
+   }
+   
+   .ridersBios {
+      z-index: 1; 
+      top: 30px;
+      left: 25px;
+      width: 550px;
+      height: 900px;
+   }
+   
+   .ridersBios img {
+      height: 25%;
+      margin-left: 30%;
+   }
+   
+   .ridersBios p {
+      width: 95%;
+   }
+
+   .bioText {
+      position: absolute;
+      left: 80px;
+      top: 300px;
+   }
+   
+   footer { 
+      position: absolute;
+      margin-left: 0;
+      max-width: 768;
+      height: 150px;
+      width: 768px;
+      top: 950px;
+   }
+   
+   #socialMediaNav {
+      top: 60px;
+      font-size: 10px;
+   }
+   
+   #followText{
+      font-size: 12px;
+   }
+
+} /*end 768px*/
+
+@media only screen and (max-width: 680px){
+   
+    body{ 
+       max-width:  width: 680px;
+    }
+   
+   #wrapper {
+      width: 590px;
+   }
+   
+   #defaultContent {
+      left: 5%;
+      width: 75%;
+   }
+   
+   .slideInDivs{
+      left: 5%;
+      width: 80%;
+      height: 900px;
+   }
+   
+   .ridersBios {
+      width: 80%;
+      height: 900px;
+   }
+   
+   footer {
+      top: 1100px;
+      width: 680px;
+   }
+} 
+
+@media only screen and (max-width: 580px){
+   
+   header{
+      height: 50%;
+      width: 100%;
+   }
+   
+   header img {
+      display: none;
+   }
+   
+   #tabAbout {
+      border-top-right-radius: 0px;
+      border-bottom-right-radius: 0px;
+      left: -13.5%;
+   }
+   
+   #tabRiders {
+      border-top-right-radius: 0px;
+      border-bottom-right-radius: 0px;
+      left: 12%;
+      top: -5%;
+   }
+   
+   #tabPledge {
+      border-top-right-radius: 0px;
+      border-bottom-right-radius: 0px;
+      left: 37.5%;
+      top: -11.3%;
+   }
+   
+   #defaultContent {
+      left: -10%;
+      top: -60px;
+   }
+   
+   .slideInDivs {
+      left: -10%;
+      top: 80px;
+   }
+   
+    .ridersBios {
+      left: -10%;
+      top: 80px;
+      height: 900px;
+   }
+   
+   footer{
+      height: 200px;
+   }
+   
+   footer span {
+      position: absolute;
+      left: 25%;
+      top: 40%;
+   }
+   
+   #ucpLogo {
+      top: 2%;
+      left: 25%;
+      height: 40%;
+      width: 40%;
+   }
+   
+   #socialMediaNav {
+      left: 45%;
+      top: -5%;
+      align-content: center;
+   }
+}
